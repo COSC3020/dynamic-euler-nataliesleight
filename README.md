@@ -14,6 +14,14 @@ programming (not memoization). Change the implementation accordingly.
 Test your new functions; I've provided some basic testing code in `code.test.js`
 but you need to go beyond that.
 
-## Runtime Analysis
+## Runtime Analysis 
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+The worst case of either function is $T(n) ∈ \Theta(n)$. They each run a while loop that runs n times. The rest of the work is constant.
+
+### Sources
+
+I referenced the notes slides for this assignment. 
+
+“I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.” - Natalie Sleight

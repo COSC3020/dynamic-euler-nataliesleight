@@ -1,9 +1,31 @@
 function factorial(n) {
-    if(n === 0) return 1;
-    else return n * factorial(n - 1);
+    var fact_new;
+    var fact = 1;
+    var fact_num = 1;
+    while (n>0) {
+        fact_new = fact * fact_num;
+        fact = fact_new;
+        fact_num += 1;
+        --n;
+    }
+    return fact;
 }
 
 function e(n) {
-    if(n === 0) return 1;
-    else return 1.0 / factorial(n) + e(n - 1);
+    var e_new;
+    var e_old = 1;
+    var e_curr = 1;
+    var fact_new;
+    var fact = 1;
+    var fact_num = 1;
+    while (n>0) {
+        fact_new = fact * fact_num;
+        fact = fact_new;
+        fact_num += 1;
+        e_curr = 1.0 / fact;
+        e_new = e_old + e_curr;
+        e_old = e_new;
+        --n;
+    }
+    return e_old;
 }
