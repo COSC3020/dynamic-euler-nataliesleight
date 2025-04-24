@@ -13,7 +13,7 @@ function factorial(n) {
 
 function e(n) {
     var e_new;
-    var e_old = 0;
+    var e_old = 1;
     var e_curr = 1;
     var fact_new;
     var fact = 1;
@@ -22,9 +22,9 @@ function e(n) {
         fact_new = fact * fact_num;
         fact = fact_new;
         fact_num += 1;
+        e_curr = 1.0 / fact;
         e_new = e_old + e_curr;
         e_old = e_new;
-        e_curr = 1.0 / fact;
         --n;
     }
     return e_old;
