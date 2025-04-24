@@ -18,7 +18,7 @@ but you need to go beyond that.
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
 
-The worst casae of either function is $T(n) ∈ \Theta(n)$.
+The worst case of either function is $T(n) ∈ \Theta(n)$. They each run a while loop that runs n times. The rest of the work is constant.
 
 ### Sources
 
